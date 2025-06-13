@@ -1,4 +1,4 @@
-Implementation guid
+Implementation guide
 
 sushi build .
 
