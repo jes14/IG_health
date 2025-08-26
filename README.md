@@ -1,4 +1,4 @@
-# Implementation Guide: Health IG
+# Asthma Reporting Implementation Guide
 
 
 ## Prerequisites
@@ -15,9 +15,13 @@ sushi build .
 ./_genonce.sh
 ```
 
+```bash
 mv output/* docs
-git add docs
+```
 
+```bash
+git add docs
+```
 
 ### URL
 https://jes14.github.io/IG_health/
