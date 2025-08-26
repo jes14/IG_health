@@ -2,14 +2,26 @@
   "resourceType" : "Patient",
   "id" : "PatientExample",
   "meta" : {
-    "profile" : ["http://example.org/StructureDefinition/MyPatient"]
+    "profile" : ["http://example.org/StructureDefinition/my-patient"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"PatientExample\"> </a><a name=\"hcPatientExample\"> </a><a name=\"PatientExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"PatientExample\"> </a><a name=\"hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-my-patient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Purple Snow  (no stated gender), DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient's occupation relevant for public health.\"><a href=\"StructureDefinition-occupation.html\">Occupation</a></td><td colspan=\"3\">Student</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's exposure relevant for public health.\"><a href=\"StructureDefinition-exposure-history.html\">Exposure History</a></td><td colspan=\"3\"><ul><li>Exposure to dust</li><li>Second-hand smoke at home</li></ul></td></tr></table></div>"
   },
+  "extension" : [{
+    "url" : "http://example.org/StructureDefinition/occupation",
+    "valueString" : "Student"
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/exposure-history",
+    "valueString" : "Exposure to dust"
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/exposure-history",
+    "valueString" : "Second-hand smoke at home"
+  }],
   "name" : [{
-    "family" : "Pond",
-    "given" : ["James"]
+    "family" : "Snow",
+    "given" : ["Purple"]
   }]
 }

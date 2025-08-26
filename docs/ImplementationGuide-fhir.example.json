@@ -3,16 +3,16 @@
   "id" : "fhir.example",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><h2>HealthIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"
   },
   "url" : "http://example.org/ImplementationGuide/fhir.example",
   "version" : "0.1.0",
-  "name" : "ExampleIG",
+  "name" : "HealthIG",
   "status" : "draft",
-  "date" : "2025-06-09T18:12:22+02:00",
-  "publisher" : "Example Publisher",
+  "date" : "2025-08-26T16:17:42+02:00",
+  "publisher" : "Kim",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "Kim",
     "telecom" : [{
       "system" : "url",
       "value" : "http://example.org/example-publisher"
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -319,7 +319,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -599,13 +599,61 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ConditionExample"
+      },
+      "name" : "ConditionExample",
+      "description" : "Asthma diagnosis for the patient.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/EncounterExample"
+      },
+      "name" : "EncounterExample",
+      "description" : "An encounter related to asthma diagnosis.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/exposure-history"
+      },
+      "name" : "Exposure History",
+      "description" : "The patient's exposure relevant for public health.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MyPatient"
+        "reference" : "StructureDefinition/my-patient"
       },
       "name" : "MyPatient",
-      "description" : "An example profile of the Patient resource.",
+      "description" : "An example profile of the Patient resource for public health reporting.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/occupation"
+      },
+      "name" : "Occupation",
+      "description" : "The patient's occupation relevant for public health.",
       "exampleBoolean" : false
     },
     {
@@ -617,8 +665,8 @@
         "reference" : "Patient/PatientExample"
       },
       "name" : "PatientExample",
-      "description" : "An example of a patient with a license to krill.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/MyPatient"
+      "description" : "An example of a patient with asthma and public health-related data.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/my-patient"
     }],
     "page" : {
       "extension" : [{

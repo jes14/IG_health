@@ -11,17 +11,36 @@
   fhir:id [ fhir:v "PatientExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://example.org/StructureDefinition/MyPatient"^^xsd:anyURI ;
-       fhir:link <http://example.org/StructureDefinition/MyPatient>
+       fhir:v "http://example.org/StructureDefinition/my-patient"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/my-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"PatientExample\"> </a><a name=\"hcPatientExample\"> </a><a name=\"PatientExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"PatientExample\"> </a><a name=\"hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-my-patient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Purple Snow  (no stated gender), DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient's occupation relevant for public health.\"><a href=\"StructureDefinition-occupation.html\">Occupation</a></td><td colspan=\"3\">Student</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's exposure relevant for public health.\"><a href=\"StructureDefinition-exposure-history.html\">Exposure History</a></td><td colspan=\"3\"><ul><li>Exposure to dust</li><li>Second-hand smoke at home</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/occupation"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Student"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/exposure-history"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Exposure to dust"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/exposure-history"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Second-hand smoke at home"
+     ]
+  ] ) ; # 
   fhir:name ( [
-     fhir:family [ fhir:v "Pond" ] ;
-     fhir:given ( [ fhir:v "James" ] )
+     fhir:family [ fhir:v "Snow" ] ;
+     fhir:given ( [ fhir:v "Purple" ] )
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

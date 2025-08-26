@@ -2,16 +2,37 @@
   "package": "fhir.example",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/exposure-history",
+      "title": "Exposure History",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/occupation",
+      "title": "Occupation",
+      "types": [
+        "string"
+      ]
+    }
+  ],
   "profiles": {
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/MyPatient",
+        "url": "http://example.org/StructureDefinition/my-patient",
         "title": "MyPatient"
       }
     ]
   },
   "usage": {
+    "http://example.org/StructureDefinition/exposure-history": [
+      "Patient"
+    ],
+    "http://example.org/StructureDefinition/occupation": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

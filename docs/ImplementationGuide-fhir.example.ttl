@@ -11,16 +11,16 @@
   fhir:id [ fhir:v "fhir.example"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><a name=\"fhir.example-en-US\"> </a><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><h2>HealthIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ImplementationGuide/fhir.example"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "ExampleIG"] ; # 
+  fhir:name [ fhir:v "HealthIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-09T18:12:22+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:date [ fhir:v "2025-08-26T16:17:42+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kim"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:name [ fhir:v "Kim" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "http://example.org/example-publisher" ]
@@ -43,7 +43,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -440,7 +440,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -823,15 +823,87 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Condition/ConditionExample> ;
+         fhir:reference [ fhir:v "Condition/ConditionExample" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionExample" ] ;
+       fhir:description [ fhir:v "Asthma diagnosis for the patient." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Encounter/EncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/EncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterExample" ] ;
+       fhir:description [ fhir:v "An encounter related to asthma diagnosis." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/exposure-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/exposure-history" ]
+       ] ;
+       fhir:name [ fhir:v "Exposure History" ] ;
+       fhir:description [ fhir:v "The patient's exposure relevant for public health." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
+         fhir:link <http://example.org/StructureDefinition/my-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/my-patient" ]
        ] ;
        fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
+       fhir:description [ fhir:v "An example profile of the Patient resource for public health reporting." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Occupation" ] ;
+       fhir:description [ fhir:v "The patient's occupation relevant for public health." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -849,11 +921,11 @@
          fhir:reference [ fhir:v "Patient/PatientExample" ]
        ] ;
        fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
+       fhir:description [ fhir:v "An example of a patient with asthma and public health-related data." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://example.org/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/MyPatient>
+         fhir:v "http://example.org/StructureDefinition/my-patient"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/my-patient>
        ]
      ] ) ;
      fhir:page [

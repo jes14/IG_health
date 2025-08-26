@@ -1,37 +1,74 @@
-ExampleIG : Validation Results
+HealthIG : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 1
-IG Publisher Version: 2.0.5
-Generated Mon Jun 09 18:13:03 CEST 2025. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
- Build Errors : 17 / 4 / 0
- /Users/yj/mos_fsh/ExampleIG/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
- /Users/yj/mos_fsh/ExampleIG/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
- /Users/yj/mos_fsh/ExampleIG/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 2
+err = 1, warn = 6, info = 1
+IG Publisher Version: 2.0.15
+Generated Tue Aug 26 16:18:26 CEST 2025. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 43 / 4 / 0
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/Condition-ConditionExample : 0 / 0 / 1
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/Encounter-EncounterExample : 1 / 0 / 1
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/StructureDefinition-exposure-history : 0 / 1 / 1
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/StructureDefinition-my-patient : 0 / 0 / 2
+ /Users/yj/mos_fsh/IG_health/fsh-generated/resources/StructureDefinition-occupation : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/Patient-PatientExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/Patient-PatientExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/Patient-PatientExample.json.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/Patient-PatientExample.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/Patient-PatientExample.xml.html#/html/body/div/div/div/p/a at Line 209, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient-definitions.html#/html/body/div/div/div/p/a at Line 542, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient-mappings.html#/html/body/div/div/div/p/a at Line 355, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient-testing.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient.html#/html/body/div/div/div/p/a at Line 1641, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2462, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 1871, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/StructureDefinition-MyPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2307, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/artifacts.html#/html/body/div/div/div/p/a at Line 194, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/index.html#/html/body/div/div/div/p/a at Line 200, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: /Users/yj/mos_fsh/ExampleIG/output/toc.html#/html/body/div/div/div/p/a at Line 142, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: Condition-ConditionExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Condition-ConditionExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Condition-ConditionExample.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Condition-ConditionExample.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Condition-ConditionExample.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Encounter-EncounterExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Encounter-EncounterExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Encounter-EncounterExample.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Encounter-EncounterExample.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Encounter-EncounterExample.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Patient-PatientExample.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Patient-PatientExample.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Patient-PatientExample.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Patient-PatientExample.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: Patient-PatientExample.xml.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history-definitions.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history-testing.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history.html#/html/body/div/div/div/p/a at Line 591, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history.profile.json.html#/html/body/div/div/div/p/a at Line 515, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history.profile.ttl.html#/html/body/div/div/div/p/a at Line 459, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-exposure-history.profile.xml.html#/html/body/div/div/div/p/a at Line 473, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient-definitions.html#/html/body/div/div/div/p/a at Line 567, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient-mappings.html#/html/body/div/div/div/p/a at Line 778, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient-testing.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient.html#/html/body/div/div/div/p/a at Line 1627, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2596, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 1973, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-my-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2421, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation-definitions.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation-testing.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation.html#/html/body/div/div/div/p/a at Line 591, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation.profile.json.html#/html/body/div/div/div/p/a at Line 515, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation.profile.ttl.html#/html/body/div/div/div/p/a at Line 459, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: StructureDefinition-occupation.profile.xml.html#/html/body/div/div/div/p/a at Line 473, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/p/a at Line 200, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
+ERROR: toc.html#/html/body/div/div/div/p/a at Line 142, column 28: The link 'http://example.org/example-publisher' for "Kim" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Condition-ConditionExample.json ==
+== fsh-generated/resources/Encounter-EncounterExample.json ==
+ERROR: Encounter/EncounterExample: Encounter.type[0].coding[0].display: Wrong Display Name 'Encounter for problem' for http://snomed.info/sct#185349003. Valid display is one of 2 choices: 'Encounter for check up (procedure)' (en) or 'Encounter for check up' (en) (for the language(s) 'en-US')
 == fsh-generated/resources/ImplementationGuide-fhir.example.json ==
 == fsh-generated/resources/Patient-PatientExample.json ==
-== fsh-generated/resources/StructureDefinition-MyPatient.json ==
-INFORMATION: StructureDefinition/MyPatient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-exposure-history.json ==
+WARNING: StructureDefinition/exposure-history: StructureDefinition.context[0]: Review the extension type for exposure-history: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-my-patient.json ==
+INFORMATION: StructureDefinition/my-patient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-occupation.json ==
+WARNING: StructureDefinition/occupation: StructureDefinition.context[0]: Review the extension type for occupation: extensions should not have a context of Element unless it's really intended that they can be used anywhere

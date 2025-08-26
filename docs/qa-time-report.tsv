@@ -1,4 +1,8 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.example.json	1502	-	0	0	0	0	0	0	3	1827	0	0	0	0	0	0	0	1	0	0	56	50	0	0	0	1	0	1
-fsh-generated/resources/Patient-PatientExample.json	249	8	0	0	0	0	0	0	0	700	0	0	0	0	0	0	0	0	0	0	15	13	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-MyPatient.json	597	7	0	40	0	0	1	0	0	749	0	0	2	0	0	0	0	1	0	0	120	346	0	4	0	3	0	1
+/fsh-generated/resources/ImplementationGuide-fhir.example.json	2496	-	0	0	0	0	0	0	9	60	0	0	0	0	0	0	0	1	0	0	42	69	0	0	0	3	0	3
+fsh-generated/resources/Condition-ConditionExample.json	929	11	0	0	1	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	9	15	0	0	0	0	0	0
+fsh-generated/resources/Encounter-EncounterExample.json	659	11	0	0	1	0	0	0	0	111	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	641	10	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	8	9	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-exposure-history.json	1271	12	0	17	1	0	0	0	0	23	0	0	1	0	0	0	0	0	0	0	33	232	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-my-patient.json	1696	11	0	53	0	0	0	0	0	24	0	0	1	0	0	0	0	2	0	0	132	286	0	0	0	6	0	3
+fsh-generated/resources/StructureDefinition-occupation.json	1240	10	0	12	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	33	59	0	0	0	2	0	0

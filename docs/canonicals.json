@@ -4,13 +4,27 @@
     "type" : "ImplementationGuide",
     "url" : "http://example.org/ImplementationGuide/fhir.example",
     "version" : "0.1.0",
-    "name" : "ExampleIG"
+    "name" : "HealthIG"
   },
   {
-    "id" : "MyPatient",
+    "id" : "exposure-history",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/MyPatient",
+    "url" : "http://example.org/StructureDefinition/exposure-history",
+    "version" : "0.1.0",
+    "name" : "ExposureHistory"
+  },
+  {
+    "id" : "my-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/my-patient",
     "version" : "0.1.0",
     "name" : "MyPatient"
+  },
+  {
+    "id" : "occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/occupation",
+    "version" : "0.1.0",
+    "name" : "Occupation"
   }
 ]
