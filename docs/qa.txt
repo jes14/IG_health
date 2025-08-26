@@ -1,9 +1,9 @@
-HealthIG : Validation Results
+AsthmaReportingIG : Validation Results
 =========================================
 
 err = 1, warn = 6, info = 1
 IG Publisher Version: 2.0.15
-Generated Tue Aug 26 16:18:26 CEST 2025. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+Generated Tue Aug 26 17:09:13 CEST 2025. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
  Build Errors : 43 / 4 / 0
  /Users/yj/mos_fsh/IG_health/fsh-generated/resources/Condition-ConditionExample : 0 / 0 / 1
  /Users/yj/mos_fsh/IG_health/fsh-generated/resources/Encounter-EncounterExample : 1 / 0 / 1

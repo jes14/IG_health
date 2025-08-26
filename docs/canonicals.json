@@ -4,7 +4,7 @@
     "type" : "ImplementationGuide",
     "url" : "http://example.org/ImplementationGuide/fhir.example",
     "version" : "0.1.0",
-    "name" : "HealthIG"
+    "name" : "AsthmaReportingIG"
   },
   {
     "id" : "exposure-history",

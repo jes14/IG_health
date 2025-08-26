@@ -3,13 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.example"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name="fhir.example"> </a><a name="hcfhir.example"> </a><h2>HealthIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name="fhir.example"> </a><a name="hcfhir.example"> </a><h2>AsthmaReportingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>
   </text>
   <url value="http://example.org/ImplementationGuide/fhir.example"/>
   <version value="0.1.0"/>
-  <name value="HealthIG"/>
-  <status value="draft"/>
-  <date value="2025-08-26T16:17:42+02:00"/>
+  <name value="AsthmaReportingIG"/>
+  <title value="Asthma Reporting Implementation Guide"/>
+  <status value="active"/>
+  <date value="2025-08-26T17:08:30+02:00"/>
   <publisher value="Kim"/>
   <contact>
     <name value="Kim"/>

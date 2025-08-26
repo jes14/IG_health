@@ -3,13 +3,14 @@
   "id" : "fhir.example",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><h2>HealthIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><h2>AsthmaReportingIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"
   },
   "url" : "http://example.org/ImplementationGuide/fhir.example",
   "version" : "0.1.0",
-  "name" : "HealthIG",
-  "status" : "draft",
-  "date" : "2025-08-26T16:17:42+02:00",
+  "name" : "AsthmaReportingIG",
+  "title" : "Asthma Reporting Implementation Guide",
+  "status" : "active",
+  "date" : "2025-08-26T17:08:30+02:00",
   "publisher" : "Kim",
   "contact" : [{
     "name" : "Kim",

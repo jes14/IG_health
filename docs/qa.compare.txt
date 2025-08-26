@@ -1,4 +1,4 @@
-HealthIG : Validation Results
+AsthmaReportingIG : Validation Results
 =========================================
 
 err = 1, warn = 6, info = 1
