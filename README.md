@@ -15,6 +15,9 @@ sushi build .
 ./_genonce.sh
 ```
 
+mv output/* docs
+git add docs
+
 
 ### URL
 https://jes14.github.io/IG_health/
