@@ -36,4 +36,4 @@ git add docs
 ```
 
 ### URL
-https://jes14.github.io/IG_health/
+https://jes14.github.io/Implementation_guide_Asthma/
